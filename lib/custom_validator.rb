@@ -1,3 +1,5 @@
+#Alternative way. NOT USED
+
 class MensAndWomensValidator < ActiveModel::Validator
   def validate(record)
     unless record.mens_apparel == true || record.womens_apparel == true
