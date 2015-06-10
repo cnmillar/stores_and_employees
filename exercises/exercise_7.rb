@@ -24,6 +24,6 @@ puts "----------"
 
 puts "Enter a store name:"
 store_name = gets.chomp
-puts Store.create(name: store_name).errors.messages
+puts Store.create(name: store_name, annual_revenue: -1, mens_apparel: true, womens_apparel: true).errors.messages
 
 # puts @store1.employees.create(first_name: "Sally", hourly_rate: 50).errors.messages
